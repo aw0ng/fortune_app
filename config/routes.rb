@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   namespace :api do
     get "/fortunes" => "example_pages#fortunes_method"
     get "/lotto" => "example_pages#lotto_method"
+    get "/count" => "example_pages#count_method"
   end
 end

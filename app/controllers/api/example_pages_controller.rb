@@ -11,8 +11,14 @@ class Api::ExamplePagesController < ApplicationController
     index = 0
     while index < 6
       @lotto << rand(1..60)
-      index + = 1 
+      index += 1 
     end
     render "lotto.json.jb"
+  end
+
+  def count_method
+    @count = 0
+    @count += 1
+    render "count.json.jb"
   end
 end
